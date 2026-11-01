@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpookyStudy AI 🎃</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <div class="emoji">🎃 👻 📚</div>
+      <h1>SpookyStudy <span>AI</span></h1>
+      <p>Turn scary topics into simple notes and quizzes!</p>
+    </header>
+
+    <section class="card">
+      <h2>🪄 Create Your Study Pack</h2>
+
+      <label for="topic">Enter your study topic</label>
+      <input id="topic" type="text"
+        placeholder="e.g. Semiconductor Physics">
+
+      <label for="level">Choose your level</label>
+      <select id="level">
+        <option>Beginner</option>
+        <option>School Student</option>
+        <option>First-year Engineering Student</option>
+      </select>
+
+      <label for="mode">Choose what you need</label>
+      <select id="mode">
+        <option value="notes">Simple Notes</option>
+        <option value="quiz">Quiz Questions</option>
+        <option value="explain">Simple Explanation</option>
+      </select>
+
+      <label for="apiKey">Gemini API Key (optional)</label>
+      <input id="apiKey" type="password"
+        placeholder="Enter your API key">
+
+      <p class="warning">
+        Never share or upload your API key to GitHub.
+        This browser-only demo is not secure for public deployment.
+      </p>
+
+      <button id="generateBtn">✨ Generate Study Pack</button>
+      <button id="demoBtn" class="secondary">Try Demo</button>
+      <p id="status" role="status"></p>
+    </section>
+
+    <section class="card">
+      <h2>📜 Your Study Pack</h2>
+      <div id="result">Your notes will appear here!</div>
+      <button id="copyBtn" class="secondary">Copy Notes</button>
+    </section>
+
+    <footer>
+      Made for Hacktoberfest 2026 🎃
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
